@@ -35,6 +35,14 @@ var ndvi = L.imageOverlay("ndvi.png",
 	{opacity:0.8}
 ).addTo(map);
 
+
+// Conjunto de control de Capas Base
+var baseMaps = {
+	"ESRI World Imagery": esri,
+	"OpenStreetMap": osm   
+};
+
+
 // Fincas de CoopeVictoria
 $.getJSON("lotes_coopevictoriarl.geojson", function(geodata) {
 	var layer_geojson_lotes_coopevictoriarl = L.geoJson(geodata, {
@@ -73,11 +81,6 @@ $.getJSON("distritos_influencia.geojson", function(geodata) {
 control_layers = L.control.layers(baseMaps, overlayMaps, {position:'topright', collapsed:true}).addTo(map);	
 
 
-// Conjunto de control de Capas Base
-var baseMaps = {
-	"ESRI World Imagery": esriLayer,
-	"OpenStreetMap": osmLayer   
-};
 
 //Conjunto de capas overlay
 var overlayMaps = {
