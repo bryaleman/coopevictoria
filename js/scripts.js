@@ -42,6 +42,11 @@ var baseMaps = {
 	"OpenStreetMap": osm   
 };
 
+//Conjunto de capas overlay
+var overlayMaps = {
+	"NDVI Diciembre 2018": ndvi
+};
+
 
 // Fincas de CoopeVictoria
 $.getJSON("lotes_coopevictoriarl.geojson", function(geodata) {
@@ -82,10 +87,6 @@ control_layers = L.control.layers(baseMaps, overlayMaps, {position:'topright', c
 
 
 
-//Conjunto de capas overlay
-var overlayMaps = {
-	"NDVI Diciembre 2018": ndvi
-};
 
 
 
