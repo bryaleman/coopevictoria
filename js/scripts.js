@@ -47,7 +47,6 @@ var overlayMaps = {
 	"NDVI Diciembre 2018": ndvi
 };
 
-
 // Fincas de CoopeVictoria
 $.getJSON("lotes_coopevictoriarl.geojson", function(geodata) {
 	var layer_geojson_lotes_coopevictoriarl = L.geoJson(geodata, {
@@ -84,6 +83,8 @@ $.getJSON("distritos_influencia.geojson", function(geodata) {
 
 // Ubicacion del control de capas
 control_layers = L.control.layers(baseMaps, overlayMaps, {position:'topright', collapsed:true}).addTo(map);	
+
+
 
 
 
