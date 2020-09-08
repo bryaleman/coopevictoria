@@ -64,7 +64,7 @@ var baseMaps = {
 
 
 // Distritos de Influencia
-$.getJSON("2010_regiones_crtm05_reh.geojson", function(geodata) {
+$.getJSON("2010_regiones_crtm05_reh_wgs84.geojson", function(geodata) {
 	var layer_geojson_distritos_influencia = L.geoJson(geodata, {
 		style: function(feature) {
 			return {'color': "#000000", 'weight': 1, 'fillOpacity': 0.0}
