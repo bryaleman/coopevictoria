@@ -70,9 +70,9 @@ $.getJSON("2010_regiones_crtm05_reh_wgs84.geojson", function(geodata) {
 			return {'color': "#000000", 'weight': 1, 'fillOpacity': 0.0}
 		},
 		onEachFeature: function(feature, layer) {
-			var popupText = "Cantón: " + feature.properties.NCANTON + "pH Alto: " + feature.properties.PH_ALTO + "pH Medio: " + feature.properties.PH_MEDIO +
-			    "pH Bajo: " + feature.properties.PH_BAJO + "<br>"
-			 + "Ca Alto: " + feature.properties.CA_ALTO + "Ca Medio: " + feature.properties.CA_MEDIO + "Ca Bajo: " + feature.properties.CA_BAJO +"<br>" 
+			var popupText = "Cantón: " + feature.properties.NCANTON + " pH Alto: " + feature.properties.PH_ALTO + " pH Medio: " + feature.properties.PH_MEDIO +
+			    " pH Bajo: " + feature.properties.PH_BAJO + "<br>"
+			 + "Ca Alto: " + feature.properties.CA_ALTO + " Ca Medio: " + feature.properties.CA_MEDIO + " Ca Bajo: " + feature.properties.CA_BAJO +"<br>" 
 			+ "Área: " + feature.properties.AREA;
 			layer.bindPopup(popupText);
 		}			
