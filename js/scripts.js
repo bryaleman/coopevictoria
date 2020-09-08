@@ -77,7 +77,7 @@ $.getJSON("2010_regiones_crtm05_reh_wgs84.geojson", function(geodata) {
 			+ "SA Alto: " + feature.properties.S_A_ALTO + " SA Medio: " + feature.properties.S_A_MEDIO + " SA Bajo: " + feature.properties.S_A_BAJO +"<br>"
 			+ "K Alto: " + feature.properties.K_ALTO + " K Medio: " + feature.properties.K_MEDIO + " K Bajo: " + feature.properties.K_BAJO +"<br>"
 			+ "P Alto: " + feature.properties.P_ALTO + " P Medio: " + feature.properties.P_MEDIO + " P Bajo: " + feature.properties.P_BAJO +"<br>"
-			+ "Ca Alto: " + feature.properties.N_DE_MUEST +"<br>"
+			+ "Número de Muestras: " + feature.properties.N_DE_MUEST +"<br>"
 			+ "Área: " + feature.properties.Area;
 			layer.bindPopup(popupText);
 		}			
