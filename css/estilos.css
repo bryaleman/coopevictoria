@@ -6,9 +6,9 @@
 /* Create two equal columns that floats next to each other */
 .column {
   float: left;
-  width: 40%;
+  width: 30%;
   padding: 10px;
-  height: 800px; /* Should be removed. Only for demonstration */
+  height: 900px; /* Should be removed. Only for demonstration */
   text-align:justify;
   opacity: 0.95;
 }
