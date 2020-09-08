@@ -72,11 +72,11 @@ $.getJSON("2010_regiones_crtm05_reh_wgs84.geojson", function(geodata) {
 		onEachFeature: function(feature, layer) {
 			var popupText = "Cantón: " + feature.properties.NCANTON + "<br>"
 			+" pH: " +" Alto: " + feature.properties.PH_ALTO + "% Medio: " + feature.properties.PH_MEDIO + "% Bajo: " + feature.properties.PH_BAJO + "%" + "<br>"
-			+ "Ac Alto: " + feature.properties.AC_ALTO + " Ac Medio: " + feature.properties.AC_MEDIO + " Ac Bajo: " + feature.properties.AC_BAJO +"<br>"
-			+ "Ca Alto: " + feature.properties.CA_ALTO + " Ca Medio: " + feature.properties.CA_MEDIO + " Ca Bajo: " + feature.properties.CA_BAJO +"<br>" 
-			+ "SA Alto: " + feature.properties.S_A_ALTO + " SA Medio: " + feature.properties.S_A_MEDIO + " SA Bajo: " + feature.properties.S_A_BAJO +"<br>"
-			+ "K Alto: " + feature.properties.K_ALTO + " K Medio: " + feature.properties.K_MEDIO + " K Bajo: " + feature.properties.K_BAJO +"<br>"
-			+ "P Alto: " + feature.properties.P_ALTO + " P Medio: " + feature.properties.P_MEDIO + " P Bajo: " + feature.properties.P_BAJO +"<br>"
+			+ "Ac: " +" Alto: " + feature.properties.AC_ALTO + "% Medio: " + feature.properties.AC_MEDIO + "% Bajo: " + feature.properties.AC_BAJO + "%" + "<br>"
+			+ "Ca: " +" Alto: " + feature.properties.CA_ALTO + "% Medio: " + feature.properties.CA_MEDIO + "% Bajo: " + feature.properties.CA_BAJO + "%" + "<br>" 
+			+ "SA: " +" Alto: " + feature.properties.S_A_ALTO + "% Medio: " + feature.properties.S_A_MEDIO + "% Bajo: " + feature.properties.S_A_BAJO + "%" + "<br>"
+			+ "K: " +"Alto: " + feature.properties.K_ALTO + "% Medio: " + feature.properties.K_MEDIO + "% Bajo: " + feature.properties.K_BAJO + "%" + "<br>"
+			+ "P: " +"Alto: " + feature.properties.P_ALTO + "% Medio: " + feature.properties.P_MEDIO + " % Bajo: " + feature.properties.P_BAJO + "%" + "<br>"
 			+ "Número de Muestras: " + feature.properties.N_DE_MUEST +"<br>"
 			+ "Área: " + feature.properties.Area;
 			layer.bindPopup(popupText);
