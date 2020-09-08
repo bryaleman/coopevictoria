@@ -12,14 +12,14 @@ var map = L.map("mapid");
 
 // Centro del mapa y nivel de acercamiento
 var mapacoopevi = L.latLng([10, -84]);
-var zoomLevel = 8;
+var zoomLevel = 7;
 
 // Definición de la vista del mapa
 map.setView(mapacoopevi, zoomLevel);
 
 
 // Control de zoom					
-L.control.zoom({position:'topright'}).addTo(map);
+//L.control.zoom({position:'topright'}).addTo(map);
 //Control de escala 
 L.control.scale({position:'topright',imperial:false}).addTo(map);
 
