@@ -80,7 +80,7 @@ $.getJSON("2010_regiones_crtm05_reh_wgs84.geojson", function(geodata) {
 	control_layers.addOverlay(layer_geojson_2010_regiones_crtm05_reh_wgs84, 'Distritos');
 });
 
-
+//
 
 
 // Ubicacion del control de capas
