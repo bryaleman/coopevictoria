@@ -1,14 +1,14 @@
 #mapid { 
 	height: 700px;
-	width:  90%;
+	width:  99%;
 }
 
 /* Create two equal columns that floats next to each other */
 .column {
   float: left;
-  width: 30%;
+  width: 45%;
   padding: 10px;
-  height: 900px; /* Should be removed. Only for demonstration */
+  height: 6900px; /* Should be removed. Only for demonstration */
   text-align:justify;
   opacity: 0.95;
 }
