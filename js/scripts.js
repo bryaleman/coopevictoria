@@ -11,8 +11,8 @@ var map = L.map("mapid");
 
 
 // Centro del mapa y nivel de acercamiento
-var mapacoopevi = L.latLng([10.06773512, -84.2996532494]);
-var zoomLevel = 12;
+var mapacoopevi = L.latLng([10, -84]);
+var zoomLevel = 6;
 
 // Definición de la vista del mapa
 map.setView(mapacoopevi, zoomLevel);
