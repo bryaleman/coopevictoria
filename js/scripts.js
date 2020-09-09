@@ -71,7 +71,8 @@ $.getJSON("2010_regiones_crtm05_reh_wgs84.geojson", function(geodata) {
 		},
 		onEachFeature: function(feature, layer) {
 			var popupText = "Cantón: " + feature.properties.NCANTON + "<br>"
-			+" pH: " +" Alto: " + feature.properties.PH_ALTO + "% Medio: " + feature.properties.PH_MEDIO + "% Bajo: " + feature.properties.PH_BAJO + "%" + "<br>"
+			+ "Probabilidad de ocurrencia según los análisis de suelos realizados en LSF" + "<br>"
+			+ "pH: " +" Alto: " + feature.properties.PH_ALTO + "% Medio: " + feature.properties.PH_MEDIO + "% Bajo: " + feature.properties.PH_BAJO + "%" + "<br>"
 			+ "Ac: " +" Alto: " + feature.properties.AC_ALTO + "% Medio: " + feature.properties.AC_MEDIO + "% Bajo: " + feature.properties.AC_BAJO + "%" + "<br>"
 			+ "Ca: " +" Alto: " + feature.properties.CA_ALTO + "% Medio: " + feature.properties.CA_MEDIO + "% Bajo: " + feature.properties.CA_BAJO + "%" + "<br>" 
 			+ "SA: " +" Alto: " + feature.properties.S_A_ALTO + "% Medio: " + feature.properties.S_A_MEDIO + "% Bajo: " + feature.properties.S_A_BAJO + "%" + "<br>"
